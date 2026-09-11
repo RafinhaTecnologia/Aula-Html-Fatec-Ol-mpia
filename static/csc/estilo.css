@@ -1,0 +1,18 @@
+h1{
+    color: green;
+    background-color:orange;
+    text-align: center;
+}
+.titulo {
+    color: brown;
+}
+
+
+#descricao {
+    font-size: 45px;
+}
+
+
+.paragrafo-simples {
+    color: rgb(14, 227, 74);
+}
