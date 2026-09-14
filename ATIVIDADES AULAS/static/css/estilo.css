@@ -1,0 +1,34 @@
+/* Seletor universal para zerar as margens e paddings */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilizando o ID descricao com um tamanho de fonte maior*/
+#descricao {
+    font-size: 1.5rem;
+    color: #34495e;
+    margin-bottom: 15px;
+}
+
+/* Estilizando os parágrafos com a classe paragrafo-simples */
+.oaragrafo-simples {
+    font-size: 1rem;
+    color: #7f8c8d;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Estilizando todos os links dentro da tag nav usando seletor descendente */
+nav a {
+    color: #2980b9
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: 15px;
+    font-weight> bold;
+}
+
+nav a:hover {
+    text-decoration> underline;
+}
