@@ -33,3 +33,11 @@ O conteúdo está organizado modularmente conforme a evolução das aulas e labo
 1. Clone este repositório para o seu computador:
    ```bash
    git clone [https://github.com/RafinhaTecnologia/Aula-Html-Fatec-Ol-mpia.git](https://github.com/RafinhaTecnologia/Aula-Html-Fatec-Ol-mpia.git)
+---
+---
+
+## 👨‍💻 Autor
+
+Desenvolvido por **Rafael de Oliveira Anjos**  
+Estudante de Desenvolvimento de Software Multiplataforma — FATEC Olímpia  
+Entre em contato: [LinkedIn](https://www.linkedin.com/in/rafinhatecnologia/) | [GitHub](https://github.com/RafinhaTecnologia)
