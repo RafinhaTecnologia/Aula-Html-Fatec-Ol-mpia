@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <windows.h> // Necessário para a função de codificação do Windows
+
+int main()
+{
+    int numero;
+    int soma = 0;
+    int contador = 0;
+
+    printf("Digite um número (digite 0 para encerrar);\n");
+    scanf("%d", &numero);
+
+    //O loop continua enquanto o número digitado for diferente de 0
+    while (numero != 0)
+    {
+        soma += numero; //adiciona o número a soma total
+        contador++; //incrementa o contador de números digitados
+
+        //pede o próximo número
+        printf("Digite outro número (digite 0 para encerrar);\n");
+        scanf("%d", &numero);
+    }
+        //Exibição do resultado final
+        printf("\n--- Resultado Final ---\n");
+        printf("Soma total dos números digitados: %d\n", soma);
+        printf("Quantidade de números digitados: %d\n", contador);
+
+            return 0;
+}
