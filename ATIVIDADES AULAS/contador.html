@@ -1,0 +1,24 @@
+<html>
+
+<body>
+        <h1>Contador JS</h1>
+        <label>Texto contado</label>
+        <textarea cols="100" rows="10" maxlength="100" onkeyup="Contador()"></textarea>
+        <span id="contagem">100</span>
+        <button>Salvar</button>
+
+        <script>
+
+            var toques = 0; //aumenta quando contagem diminui
+
+            function contador(){
+                const contagem = document.querySelector("#contagem");
+                toques += 1;
+                let cont_aux = parseInt (contagem.textContent)-toques;
+                console.log(cont_aux, toques);
+                contagem.textContent = cont_aux
+            }
+        </script>
+    </body>
+
+</html>
