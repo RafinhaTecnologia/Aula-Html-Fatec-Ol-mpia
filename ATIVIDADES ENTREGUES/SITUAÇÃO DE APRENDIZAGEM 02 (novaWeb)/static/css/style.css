@@ -1,0 +1,423 @@
+/* Remove margens e preenchimentos padrão e define a fonte global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Cor de fundo e cor de texto padrão */
+body {
+    background-color: #f1f5f9;
+    color: #1e293b;
+}
+
+/* ==========================================
+   TELAS DE LOGIN E CADASTRO
+   ========================================== */
+
+/* Centraliza o cartão de login ou cadastro na tela */
+.pagina-login {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #e2e8f0;
+}
+
+/* Caixa branca do formulário */
+.cartao-login {
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+}
+
+/* Título principal do formulário */
+.cartao-login h1 {
+    font-size: 24px;
+    margin-bottom: 6px;
+    color: #0f172a;
+}
+
+/* Subtítulo do formulário */
+.subtitulo {
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 20px;
+}
+
+/* Espaçamento entre campos */
+.formulario .campo {
+    margin-bottom: 16px;
+}
+
+/* Rótulo de cada campo */
+.formulario label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #334155;
+}
+
+/* Campos de entrada e seleção */
+.formulario input,
+.formulario select {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 14px;
+    border: 1px solid #94a3b8;
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: #0f172a;
+}
+
+/* Destaque ao focar no campo */
+.formulario input:focus,
+.formulario select:focus {
+    outline: 2px solid #2563eb;
+    border-color: #2563eb;
+}
+
+/* Botão principal */
+.btn-principal {
+    width: 100%;
+    padding: 11px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #2563eb;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Hover do botão principal */
+.btn-principal:hover {
+    background-color: #1d4ed8;
+}
+
+/* Rodapé com link secundário */
+.rodape-form {
+    margin-top: 18px;
+    text-align: center;
+    font-size: 14px;
+    color: #475569;
+}
+
+.rodape-form a {
+    color: #2563eb;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.rodape-form a:hover {
+    text-decoration: underline;
+}
+
+/* ==========================================
+   ESTRUTURA INTERNA (PERFIL E CONSULTA)
+   ========================================== */
+
+/* Divide menu lateral e conteúdo principal */
+.layout {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* Barra lateral esquerda */
+.menu-lateral {
+    width: 230px;
+    min-height: 100vh;
+    flex-shrink: 0;
+    background-color: #0f172a;
+    color: #ffffff;
+    padding: 24px 16px;
+}
+
+/* Título da barra lateral */
+.logo {
+    font-size: 20px;
+    margin-bottom: 24px;
+    padding-left: 8px;
+}
+
+/* Remove marcadores e recuo esquerdo da lista */
+.menu-lateral ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+/* Espaçamento entre itens do menu */
+.menu-lateral li {
+    margin-bottom: 8px;
+}
+
+/* Links do menu lateral */
+.menu-lateral a {
+    display: block;
+    padding: 10px 12px;
+    color: #cbd5e1;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Link ativo ou ao passar o mouse */
+.menu-lateral a:hover,
+.menu-lateral a.ativo {
+    background-color: #2563eb;
+    color: #ffffff;
+}
+
+/* Botão Sair no menu lateral */
+.menu-lateral a.sair {
+    margin-top: 24px;
+    color: #fca5a5;
+}
+
+.menu-lateral a.sair:hover {
+    background-color: #991b1b;
+    color: #ffffff;
+}
+
+/* Área principal onde ficam perfil e consulta */
+.conteudo {
+    flex: 1;
+    padding: 32px;
+    background-color: #f1f5f9;
+}
+
+/* Cabeçalho da área principal */
+.topo-pagina {
+    margin-bottom: 24px;
+}
+
+.topo-pagina h1 {
+    font-size: 24px;
+    color: #0f172a;
+}
+
+/* ==========================================
+   PERFIL DO USUÁRIO
+   ========================================== */
+
+/* Cartão com foto e dados do usuário */
+.cartao-perfil {
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 28px;
+    max-width: 720px;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+/* Foto de perfil circular */
+.foto-perfil img {
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #cbd5e1;
+}
+
+/* Bloco de informações à direita da foto */
+.dados-perfil {
+    flex: 1;
+}
+
+.dados-perfil h2 {
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+.tipo-usuario {
+    font-size: 14px;
+    color: #475569;
+    margin-bottom: 16px;
+}
+
+/* Lista de dados cadastrais */
+.lista-dados {
+    border-top: 1px solid #e2e8f0;
+}
+
+/* Linha de rótulo e valor */
+.linha-dado {
+    display: flex;
+    padding: 8px 0;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 14px;
+}
+
+.linha-dado dt {
+    width: 130px;
+    font-weight: bold;
+    color: #334155;
+}
+
+.linha-dado dd {
+    color: #0f172a;
+}
+
+/* ==========================================
+   ÁREA DE CONSULTA E TABELA
+   ========================================== */
+
+/* Caixa da barra de busca */
+.barra-busca {
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 20px;
+}
+
+.form-busca label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* Campo de busca e botão lado a lado */
+.busca-grupo {
+    display: flex;
+    gap: 10px;
+}
+
+.busca-grupo input {
+    flex: 1;
+    padding: 10px 12px;
+    font-size: 14px;
+    border: 1px solid #94a3b8;
+    border-radius: 4px;
+}
+
+.btn-buscar {
+    padding: 10px 18px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #2563eb;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-buscar:hover {
+    background-color: #1d4ed8;
+}
+
+/* Container da tabela */
+.caixa-tabela {
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+/* Tabela de registros */
+.tabela-dados {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.tabela-dados th,
+.tabela-dados td {
+    padding: 12px 14px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.tabela-dados th {
+    background-color: #f8fafc;
+    color: #334155;
+    font-weight: bold;
+}
+
+/* Destaque da linha ao passar o mouse */
+.tabela-dados tbody tr:hover {
+    background-color: #f1f5f9;
+}
+
+/* Selos de status da tabela */
+.status {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.status.ativo {
+    background-color: #dcfce7;
+    color: #166534;
+}
+
+.status.inativo {
+    background-color: #fef9c3;
+    color: #854d0e;
+}
+
+/* ==========================================
+   RESPONSIVIDADE
+   ========================================== */
+
+/* Ajustes para telas até 768px */
+@media (max-width: 768px) {
+    .layout {
+        flex-direction: column;
+    }
+
+    .menu-lateral {
+        width: 100%;
+        min-height: auto;
+        padding: 16px;
+    }
+
+    .menu-lateral ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .menu-lateral a.sair {
+        margin-top: 0;
+    }
+
+    .conteudo {
+        padding: 18px;
+    }
+
+    .cartao-perfil {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .linha-dado {
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .linha-dado dt {
+        width: auto;
+    }
+
+    .busca-grupo {
+        flex-direction: column;
+    }
+
+    .btn-buscar {
+        width: 100%;
+    }
+}

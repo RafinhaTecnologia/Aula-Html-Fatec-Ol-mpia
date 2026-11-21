@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Define a codificação de caracteres para acentuação -->
+    <meta charset="UTF-8">
+    <!-- Ajusta o layout para diferentes tamanhos de tela -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da aba do navegador -->
+    <title>Consulta - Sistema</title>
+    <!-- Importa a folha de estilos externa dentro de static/css -->
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+
+    <!-- Estrutura principal com menu lateral e conteúdo -->
+    <div class="layout">
+
+        <!-- Menu lateral de navegação -->
+        <aside class="menu-lateral">
+            <h2 class="logo">Sistema</h2>
+            <nav>
+                <ul>
+                    <!-- Link para o perfil -->
+                    <li><a href="perfil.html">Perfil</a></li>
+                    <!-- Link para a área de consulta (página ativa) -->
+                    <li><a href="consulta.html" class="ativo">Consulta</a></li>
+                    <!-- Link Sair voltando para a tela de login (index.html) -->
+                    <li><a href="index.html" class="sair">Sair</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Área principal da consulta -->
+        <main class="conteudo">
+            <header class="topo-pagina">
+                <h1>Área de Consulta</h1>
+            </header>
+
+            <!-- Barra com o campo de busca -->
+            <section class="barra-busca">
+                <form action="consulta.html" method="get" class="form-busca">
+                    <label for="busca">Buscar registro</label>
+                    <div class="busca-grupo">
+                        <input type="search" id="busca" name="busca" placeholder="Pesquisar por nome, e-mail ou tipo...">
+                        <button type="submit" class="btn-buscar">Buscar</button>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Tabela de dados -->
+            <section class="caixa-tabela">
+                <table class="tabela-dados">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>E-mail</th>
+                            <th>Tipo</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01</td>
+                            <td>Rafael de Oliveira</td>
+                            <td>rafael.oliveira@exemplo.com</td>
+                            <td>Operador</td>
+                            <td><span class="status ativo">Ativo</span></td>
+                        </tr>
+                        <tr>
+                            <td>02</td>
+                            <td>Camila Ferreira</td>
+                            <td>camila.ferreira@exemplo.com</td>
+                            <td>Administrador</td>
+                            <td><span class="status ativo">Ativo</span></td>
+                        </tr>
+                        <tr>
+                            <td>03</td>
+                            <td>Lucas Almeida</td>
+                            <td>lucas.almeida@exemplo.com</td>
+                            <td>Padrão</td>
+                            <td><span class="status inativo">Pendente</span></td>
+                        </tr>
+                        <tr>
+                            <td>04</td>
+                            <td>Beatriz Santos</td>
+                            <td>beatriz.santos@exemplo.com</td>
+                            <td>Operador</td>
+                            <td><span class="status ativo">Ativo</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Define a codificação de caracteres para suportar acentuação -->
+    <meta charset="UTF-8">
+    <!-- Garante a responsividade em computadores e dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título apresentado no separador do navegador -->
+    <title>Cadastro - Sistema</title>
+    <!-- Liga a folha de estilos externa dentro de static/css -->
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body class="pagina-login">
+
+    <!-- Cartão central do formulário de cadastro -->
+    <main class="cartao-login">
+        <h1>Criar Conta</h1>
+        <p class="subtitulo">Preencha os dados básicos do utilizador</p>
+
+        <!-- Formulário de cadastro; ao submeter, navega para perfil.html -->
+        <form action="perfil.html" method="get" class="formulario">
+            <!-- Campo de nome completo -->
+            <div class="campo">
+                <label for="cad-nome">Nome completo</label>
+                <input type="text" id="cad-nome" name="nome" placeholder="Seu nome" required>
+            </div>
+
+            <!-- Campo de e-mail -->
+            <div class="campo">
+                <label for="cad-email">E-mail</label>
+                <input type="email" id="cad-email" name="email" placeholder="seuemail@dominio.com" required>
+            </div>
+
+            <!-- Campo de seleção do tipo de utilizador -->
+            <div class="campo">
+                <label for="cad-tipo">Tipo de utilizador</label>
+                <select id="cad-tipo" name="tipo" required>
+                    <option value="" selected disabled>Selecione o tipo</option>
+                    <option value="Padrão">Padrão</option>
+                    <option value="Operador">Operador</option>
+                    <option value="Administrador">Administrador</option>
+                </select>
+            </div>
+
+            <!-- Campo de senha -->
+            <div class="campo">
+                <label for="cad-senha">Senha</label>
+                <input type="password" id="cad-senha" name="senha" placeholder="Crie uma senha" required>
+            </div>
+
+            <!-- Campo de confirmação de senha -->
+            <div class="campo">
+                <label for="cad-confirma">Confirmar senha</label>
+                <input type="password" id="cad-confirma" name="confirma" placeholder="Repita a senha" required>
+            </div>
+
+            <!-- Botão de submissão do cadastro -->
+            <button type="submit" class="btn-principal">Cadastrar</button>
+        </form>
+
+        <!-- Ligação para regressar ao ecrã de login -->
+        <p class="rodape-form">
+            Já possui conta? <a href="index.html">Fazer login</a>
+        </p>
+    </main>
+
+</body>
+</html>

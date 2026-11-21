@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Define a codificação de caracteres para acentuação -->
+    <meta charset="UTF-8">
+    <!-- Ajusta o layout para diferentes tamanhos de tela -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da aba do navegador -->
+    <title>Login - Sistema</title>
+    <!-- Importa a folha de estilos externa dentro de static/css -->
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body class="pagina-login">
+
+    <!-- Caixa central do formulário de login -->
+    <main class="cartao-login">
+        <h1>Entrar</h1>
+        <p class="subtitulo">Acesse sua conta para continuar</p>
+
+        <!-- Formulário de login; ao enviar, abre perfil.html -->
+        <form action="perfil.html" method="get" class="formulario">
+            <!-- Campo de e-mail -->
+            <div class="campo">
+                <label for="login-email">E-mail</label>
+                <input type="email" id="login-email" name="email" placeholder="exemplo@email.com" required>
+            </div>
+
+            <!-- Campo de senha -->
+            <div class="campo">
+                <label for="login-senha">Senha</label>
+                <input type="password" id="login-senha" name="senha" placeholder="Digite sua senha" required>
+            </div>
+
+            <!-- Botão de entrada -->
+            <button type="submit" class="btn-principal">Entrar</button>
+        </form>
+
+        <!-- Link para a tela de cadastro -->
+        <p class="rodape-form">
+            Ainda não tem conta? <a href="cadastro.html">Cadastrar</a>
+        </p>
+    </main>
+
+</body>
+</html>

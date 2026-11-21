@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Define a codificação de caracteres para acentuação -->
+    <meta charset="UTF-8">
+    <!-- Ajusta o layout para diferentes tamanhos de tela -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da aba do navegador -->
+    <title>Perfil do Usuário - Sistema</title>
+    <!-- Importa a folha de estilos externa dentro de static/css -->
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+
+    <!-- Estrutura principal com menu lateral e conteúdo -->
+    <div class="layout">
+
+        <!-- Menu lateral de navegação -->
+        <aside class="menu-lateral">
+            <h2 class="logo">Sistema</h2>
+            <nav>
+                <ul>
+                    <!-- Link para o perfil (página ativa) -->
+                    <li><a href="perfil.html" class="ativo">Perfil</a></li>
+                    <!-- Link para a área de consulta -->
+                    <li><a href="consulta.html">Consulta</a></li>
+                    <!-- Link Sair voltando para a tela de login (index.html) -->
+                    <li><a href="index.html" class="sair">Sair</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Área principal da página -->
+        <main class="conteudo">
+            <header class="topo-pagina">
+                <h1>Perfil do Usuário</h1>
+            </header>
+
+            <!-- Cartão com informações do cadastro -->
+            <section class="cartao-perfil">
+                <div class="foto-perfil">
+                    <!-- Imagem de perfil com tamanho definido -->
+                    <img src="static/img/foto-perfil.jpg" alt="Foto de perfil do usuário">
+                </div>
+
+                <div class="dados-perfil">
+                    <h2>Rafael de Oliveira</h2>
+                    <p class="tipo-usuario">Tipo: Operador</p>
+
+                    <!-- Lista com os dados cadastrais -->
+                    <dl class="lista-dados">
+                        <div class="linha-dado">
+                            <dt>Nome:</dt>
+                            <dd>Rafael de Oliveira</dd>
+                        </div>
+                        <div class="linha-dado">
+                            <dt>E-mail:</dt>
+                            <dd>rafael.oliveira@exemplo.com</dd>
+                        </div>
+                        <div class="linha-dado">
+                            <dt>Tipo de perfil:</dt>
+                            <dd>Operador</dd>
+                        </div>
+                        <div class="linha-dado">
+                            <dt>Cidade:</dt>
+                            <dd>Olímpia - SP</dd>
+                        </div>
+                    </dl>
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+</body>
+</html>
